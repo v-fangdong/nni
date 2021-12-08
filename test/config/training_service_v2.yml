@@ -13,7 +13,7 @@ hybrid:
     workspaceName:
     computeTarget:
 kubeflow:
-  trialGpuNumber: 0
+  trialGpuNumber: 1
   trialConcurrency: 2
   maxTrialNumber: 2
   nniManagerIp:
@@ -25,7 +25,7 @@ kubeflow:
       code_directory:
       dockerImage:
       cpuNumber: 1
-      gpuNumber: 0
+      gpuNumber: 1
       memorySize: 8192
       replicas: 1
     operator: tf-operator
@@ -37,7 +37,7 @@ kubeflow:
       keyVaultKey:
     apiVersion: v1
 frameworkcontroller:
-  trialGpuNumber: 0
+  trialGpuNumber: 1
   trialConcurrency: 2
   maxTrialNumber: 2
   nniManagerIp:
@@ -50,7 +50,7 @@ frameworkcontroller:
         dockerImage: 
         taskNumber: 1
         command:
-        gpuNumber: 0
+        gpuNumber: 1
         cpuNumber: 1
         memorySize: 8192
         framework_attempt_completion_policy:
